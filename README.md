@@ -1,12 +1,12 @@
 # SnoopDev
 Snoop Deep Web to crawl a website and get its html and screenshot using stormcrawler running in local mode in Apache Storm.
 
-Here are the brief steps for executing the task with code snippets in Java:
+Here are the brief steps which I followed for executing the task in Java:
 
 Step 1: Setting up the Environment
 
-Install and configure Apache Storm and Selenium in your system
-Created a new Java project and add dependencies for Storm and Selenium
+Installed and configured the Apache Storm and Selenium in my system
+Created a new Java project and added new dependencies for Storm and Selenium
 
 Step 2: Crawling the Websites
 
@@ -16,21 +16,14 @@ Defined a Topology that connects the Spout and Bolt and submit it to Storm
 
 Step 3: Stored the Data in the Database
 
-Used a database library such as JDBC to connect to your chosen backend (MySQL, PostgreSQL, or MongoDB)
+Used a database library such as JDBC to connect to my chosen backend MySQL
 Created a new Bolt for storing the extracted data in the database
-Added the Bolt to your Topology to store the data as it is crawled
+Added the Bolt to my Topology to store the data as it is crawled
 
 
 Step 4: Creating the Result JSON
 
-Once I have stored the HTML data and images in the database, I  created the result JSON file. The result should contain the following information for each seed URL:
-
-Seed URL
-Current URL visited by the crawler
-HTML source code of the current URL
-Base64 image of the complete 1080p viewport (full screen) webpage
-
-
+Once I stored the HTML data and images in the database, I  created the result JSON file. 
 
 Step 5: Deployment
 
@@ -47,4 +40,4 @@ Made the result JSON file accessible to the user.
 
 Step 6: Key Takeaway
 
-One key takeaway from this exercise is the importance of using a distributed system like Apache Storm to handle large-scale web crawling. Apache Storm allows you to distribute the crawling process across multiple nodes, making it faster and more efficient. Additionally, the use of Selenium allows for the extraction of full-page screenshots, which can be useful for certain applications. Overall, this exercise demonstrates the power and potential of distributed systems and web crawling for data acquisition and analysis.
+One key takeaway from this exercise is the importance of using a distributed system like Apache Storm to handle large-scale web crawling. Apache Storm allows us to distribute the crawling process across multiple nodes, making it faster and more efficient. Additionally, the use of Selenium allows for the extraction of full-page screenshots, which can be useful for certain applications. Overall, this exercise demonstrates the power and potential of distributed systems and web crawling for data acquisition and analysis.
